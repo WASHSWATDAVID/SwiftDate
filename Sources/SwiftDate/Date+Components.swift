@@ -44,26 +44,6 @@ public extension Date {
 		return self.inDateDefaultRegion().era
 	}
 
-	/// The number of year units for the receiver expressed in the context of `defaultRegion`.
-	public var year: Int {
-		return self.inDateDefaultRegion().year
-	}
-	
-	/// The number of month units for the receiver expressed in the context of `defaultRegion`.
-	public var month: Int {
-		return self.inDateDefaultRegion().month
-	}
-	
-	/// The number of day units for the receiver expressed in the context of `defaultRegion`.
-	public var day: Int {
-		return self.inDateDefaultRegion().day
-	}
-	
-	/// The number of hour units for the receiver expressed in the context of `defaultRegion`.
-	public var hour: Int {
-		return self.inDateDefaultRegion().hour
-	}
-	
 	/// Nearest rounded hour from the date expressed in the context of `defaultRegion`.
 	public var nearestHour: Int {
 		return self.inDateDefaultRegion().nearestHour
@@ -197,12 +177,6 @@ public extension Date {
 	/// Calculation is made in the context of `defaultRegion`.
 	public var previousWeekend: (startDate: DateInRegion, endDate: DateInRegion)? {
 		return self.inDateDefaultRegion().previousWeekend
-	}
-	
-	/// Returns whether the given date is in today as boolean.
-	/// Calculation is made in the context of `defaultRegion`.
-	public var isToday: Bool {
-		return self.inDateDefaultRegion().isToday
 	}
 	
 	/// Returns whether the given date is in yesterday.
